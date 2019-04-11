@@ -30,6 +30,8 @@ body {
 
 .btn-hamburger{
   display: flex;
+  grid-column: 3;
+  flex-direction: column;
 }
 
 .btn-hamburger > div{
