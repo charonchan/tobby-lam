@@ -14,13 +14,19 @@ body {
 .nav {
   background: white;
   position: fixed;
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 1rem;
   overflow: hidden;
   top: 0;
   width: 100%;
   z-index: 999999;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width:800px) {
+  .nav{
+    padding: 1.5rem 1rem;
+  }
 }
 
 .logo{
@@ -32,13 +38,16 @@ body {
   display: flex;
   grid-column: 3;
   flex-direction: column;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .btn-hamburger > div{
   width: 35px;
-  height: 5px;
+  height: 4.5px;
   background-color: black;
-  margin: 5px 0;
+  border-radius: 0.5em;
+  margin: 4.5px 0;
 }
 
 @media screen and (min-width:800px) {
