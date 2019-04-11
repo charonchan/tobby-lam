@@ -222,16 +222,22 @@ footer{
   border-top: 7px solid #00b894;
   background-color: #636e72;
   color: white;
+  padding-bottom: 1.5rem;
 }
 
 .footer-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 80%;
-  margin: 2rem auto 1rem;
+  max-width: 78%;
+  margin: 1rem auto 0;
 }
 
 .footer-info > p{
   margin: 1px 0 1.5px;
   font-size: .8em;
+}
+
+#contact{
+  grid-column: 3;
+  flex-direction: column;
 }
