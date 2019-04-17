@@ -12,7 +12,15 @@ body {
 }
 
 .nav {
-  background: white;
+  background-color: white;
+  padding: 0 1rem;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+  /* background: white;
   position: fixed;
   padding: 0.5rem 1rem;
   overflow: hidden;
@@ -20,7 +28,7 @@ body {
   width: 100%;
   z-index: 999999;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; */
 }
 
 @media screen and (min-width:800px) {
@@ -36,6 +44,9 @@ body {
 
 .btn-hamburger{
   display: flex;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
   grid-column: 3;
   flex-direction: column;
   background-color: transparent;
@@ -57,11 +68,10 @@ body {
 }
 
 .nav-list {
-  display: none;
+  color: black;
   list-style: none;
   padding: 0;
-  text-align: right;
-  margin: 0;
+  display: none;
 }
 
 @media screen and (min-width:800px) {
