@@ -18,7 +18,7 @@ button{
   color: white;
 }
 
-button:hover {
+.btn:hover {
   cursor: pointer;
   background-color: #535c68;
 }
@@ -29,6 +29,7 @@ button:hover {
   display: grid;
   grid-gap: 1.5em;
   background-color: #ced6e0;
+  transition: all 0.4s linear; 
 }
 
 @media screen and (min-width:950px) {
@@ -53,11 +54,8 @@ button:hover {
   padding: 15px;
 }
 
-
-
 .container {
   max-width: 80%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 1em;
 }
