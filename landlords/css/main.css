@@ -4,10 +4,31 @@
   box-sizing: border-box;
 }
 
+.info{
+  background-color: #ced6e0;
+  border: 0.5em solid white;
+  border-radius: 0.5em;
+  padding: 2em 0;
+}
+
+button{
+  padding: 1em 0.5em;
+  background-color: #95afc0;
+  border-color: #c7ecee;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #535c68;
+}
+
 .all-services{
-  padding: 0 1.5em 1.5em;
+  margin: 1em 0;
+  padding: 1em 1.5em 1.5em;
   display: grid;
   grid-gap: 1.5em;
+  background-color: #ced6e0;
 }
 
 @media screen and (min-width:950px) {
@@ -20,6 +41,7 @@
 .services{
   border: 2px solid white;
   background-color: #dfe6e9;
+  text-align: left;
 }
 
 .service-heading{
@@ -31,9 +53,7 @@
   padding: 15px;
 }
 
-.service-heading p{
-  font-size: 0.5em;
-}
+
 
 .container {
   max-width: 80%;

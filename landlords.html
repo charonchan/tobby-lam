@@ -33,11 +33,12 @@
     </header>
     <main>
       <div class="container">
-        <p> Click on the buttons below to learn more about the services we provide!</p>
-      <!-- indent these lines inside. Include the heading inside the section to indicate that the heading is for this section (otherwise they are not grouped together) -->
-      <button type="button" name="button">Rental Services</button>
-      <button type="button" name="button">Rental Management</button>
-        <section class="all-services">
+        <section class="info">
+          <p>Click on the buttons below to learn more about the services we provide!</p>
+          <button type="button" name="button">Rental Services</button>
+          <button type="button" name="button">Rental Management</button>
+        </section>
+        <section class="all-services rental">
 
           <!-- sections have visual meaning to us as readers, but no semantic meaning, so consider making all your sections (class="services") into articles or sections to indicate that the h2 and ul / lis are all grouped together  -->
           <section class="services">
@@ -75,7 +76,7 @@
           </section>
         </section>
 
-        <section class="all-services">
+        <section class="all-services management">
           <section class="services">
             <h2 class="service-heading">Tenant Care & Rental Income</h2>
               <ul>
@@ -125,17 +126,18 @@
     </main>
     <footer>
       <div class="footer-container">
-        <section class="footer-info">
+        <section id="brokerage" class="footer-info">
           <p>CondoWong Real Estate Inc.</p>
           <p>328 Highway 7 E, Unit 20</p>
           <p>Richmond Hill, ON L4B 3P7</p>
         </section>
-        <section class="footer-info">
+        <section id="contact" class="footer-info">
           <p>Tobby Lam</p>
           <p>Mobile: 647-408-7888</p>
           <p>Email: tobby@condowong.ca</p>
         </section>
       </div>
     </footer>
+    <script src="landlords/scripts/scripts.js" charset="utf-8"></script>
   </body>
 </html>
