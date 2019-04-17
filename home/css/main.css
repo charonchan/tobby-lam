@@ -8,11 +8,11 @@ body {
   background-color: #c7ecee;
   margin: 0;
   font-family: 'Source Sans Pro', Arial, sans-serif;
-  padding-top: 3em;
+  /* padding-top: 3em; */
 }
 
 .nav {
-  background-color: white;
+  background: white;
   padding: 0 1rem;
   overflow: hidden;
   position: fixed;
@@ -20,40 +20,31 @@ body {
   left: 0;
   width: 100%;
   z-index: 999999;
-  /* background: white;
-  position: fixed;
-  padding: 0.5rem 1rem;
-  overflow: hidden;
-  top: 0;
-  width: 100%;
-  z-index: 999999;
-  display: grid;
-  grid-template-columns: 1fr 1fr; */
+
 }
 
 @media screen and (min-width:800px) {
   .nav{
-    padding: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 2rem;
   }
 }
 
 .logo{
-  display: inline;
-  margin: 0;
+    margin: 1rem 0;
+    text-align: left;
 }
 
-.btn-hamburger{
-  display: flex;
+.hamburger{
   position: absolute;
   top: 0.75em;
   right: 1em;
-  grid-column: 3;
-  flex-direction: column;
   background-color: transparent;
   border-color: transparent;
 }
 
-.btn-hamburger > div{
+.hamburger > div{
   width: 35px;
   height: 4.5px;
   background-color: black;
@@ -62,16 +53,20 @@ body {
 }
 
 @media screen and (min-width:800px) {
-  .btn-hamburger{
+  .hamburger{
     display: none;
   }
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
 }
 
 .nav-list {
   color: black;
   list-style: none;
   padding: 0;
-  display: none;
 }
 
 @media screen and (min-width:800px) {
@@ -82,33 +77,58 @@ body {
   }
 }
 
-/* .nav:hover .nav-list{
-  display: block;
-} */
-
 .nav-item {
-  border-top: 0;
+  border-top: 1px solid #c7ecee;
   text-decoration: none;
-  float: right;
-  /* margin: 0 1rem 0; */
+
 }
 
-/* @media screen and (min-width:800px) {
+@media screen and (min-width:800px) {
   .nav-item {
-    border-top: 1px solid #333;
+    border-top: none;
+    float: right;
   }
-} */
+}
+
 
 .nav-link {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem 0;
+  height: 1em;
+  line-height: 1;
   color: black;
   text-decoration: none;
+}
+
+@media screen and (min-width:800px) {
+  .nav-link {
+    margin: 0 1rem;
+    height: 0;
+    line-height: 0;
+  }
 }
 
 .nav-link:hover {
   text-decoration: underline;
 }
+
+.nav-link, .nav-item, .nav-list {
+  transition: all 0.4s linear;
+}
+.close .nav-link {
+  margin: 0;
+  opacity: 0;
+}
+.close .nav-item {
+  border-width: 0;
+  margin: 0;
+  height: 0;
+}
+
+.close .nav-list {
+  margin: 0;
+}
+
 
 .home-banner {
   width: 100%;

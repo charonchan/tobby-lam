@@ -1,7 +1,10 @@
-console.log('Hello World!');
-var elMenuBtn = document.getElementById('menu');
-var elMainMenu = document.querySelector('nav-list');
+console.log("Hello World!");
 
-elMenuBtn.addEventListener('click', function(e){
-  elMainMenu.classList.toggle('open');
+
+var elMainMenu = document.getElementById('menu');
+var elHambBtn = document.querySelector('.hamburger');
+
+
+elHambBtn.addEventListener('click', function(e) {
+  elMainMenu.classList.toggle('close');
 });
