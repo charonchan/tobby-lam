@@ -121,10 +121,12 @@ body {
 .nav-link, .nav-item, .nav-list {
   transition: all 0.4s linear;
 }
+
 .close .nav-link {
   margin: 0;
   opacity: 0;
 }
+
 .close .nav-item {
   border-width: 0;
   margin: 0;
@@ -273,7 +275,7 @@ footer{
   font-size: .8em;
 }
 
-#contact{
+#agent{
   grid-column: 3;
   flex-direction: column;
 }

@@ -29,7 +29,7 @@ button{
   display: grid;
   grid-gap: 1.5em;
   background-color: #ced6e0;
-  transition: all 0.4s linear; 
+  transition: all 0.4s linear;
 }
 
 @media screen and (min-width:950px) {
@@ -37,6 +37,10 @@ button{
     grid-template-columns: 1fr 1fr;
 
   }
+}
+
+.open.all-services{
+  display: none;
 }
 
 .services{
